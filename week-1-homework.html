@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokyo weather report</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #1a64d6;
+        font-size: 34px;
+        font-weight: 650;
+        line-height: 48px;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .temperature {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 48px;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .slash {
+        margin: 0 0.2spx;
+      }
+      .highest {
+        font-weight: bold;
+      }
+      ul {
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      li:hover {
+        background: #fffbef;
+      }
+      li {
+        margin: 40px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .weekdays {
+        font-size: 18.72px;
+        font-weight: bold;
+        margin: 32px;
+      }
+      .weather {
+        text-align: center;
+        font-size: 17.8px;
+        margin: 18px;
+        font-family: monospace;
+        color: #000000;
+        opacity: 0.7;
+      }
+      .forth-slash {
+        margin: 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 16px 24px;
+        font-size: 16px;
+        background: #1a64d6;
+        color: #ffffff;
+        border: 1px solid #1a64d6;
+        border-radius: 30px;
+        box-shadow: 4px 7px 4px rgba(26, 100, 214, 0.1);
+      }
+      button:hover {
+        background: #ffffff;
+        color: #1a64d6;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+        font-family: monospace;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      ⛅
+      <br />
+      Currently 21° in Tokyo
+    </h1>
+    <div class="temperature">
+      13° <span class="slash">/</span> <span class="highest">23°</span>
+    </div>
+    <ul class="days">
+      <li>
+        <span class="weekdays">🌧Tomorrow</span>
+        <br />
+        <br />
+        <span class="weather"
+          ><span>10°</span><span class="forth-slash">/</span
+          ><span class="highest">22°</span></span
+        >
+      </li>
+      <li>
+        <span class="weekdays">🌥 Saturday</span>
+        <br />
+        <br />
+        <span class="weather"
+          ><span>15°</span><span class="forth-slash">/</span
+          ><span class="highest">17°</span></span
+        >
+      </li>
+      <li>
+        <span class="weekdays">☀ Sunday</span>
+        <br />
+        <br />
+        <span class="weather"
+          ><span>25°</span><span class="forth-slash">/</span
+          ><span class="highest">28°</span></span
+        >
+      </li>
+    </ul>
+    <button>Change city</button>
+    <p>Coded by N Sukazi</p>
+  </body>
+</html>
